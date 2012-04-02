@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83E697C5141011ED0067EE1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E697C4141011ED0067EE1E /* Foundation.framework */; };
+		83E697C8141011ED0067EE1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E697C7141011ED0067EE1E /* main.m */; };
+		83E697CC141011ED0067EE1E /* git_checker.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83E697CB141011ED0067EE1E /* git_checker.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83E697BE141011ED0067EE1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				83E697CC141011ED0067EE1E /* git_checker.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		832DF36B152A169B00FE176E /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = Source/Globals.h; sourceTree = SOURCE_ROOT; };
+		83E697C0141011ED0067EE1E /* git-checker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "git-checker"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E697C4141011ED0067EE1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83E697C7141011ED0067EE1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
+		83E697CA141011ED0067EE1E /* git-checker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "git-checker-Prefix.pch"; path = "Source/git-checker-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		83E697CB141011ED0067EE1E /* git_checker.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = git_checker.1; path = Source/git_checker.1; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E697BD141011ED0067EE1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E697C5141011ED0067EE1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83E697B5141011EC0067EE1E = {
+			isa = PBXGroup;
+			children = (
+				83E697C6141011ED0067EE1E /* Source */,
+				83E697C3141011ED0067EE1E /* Frameworks */,
+				83E697C1141011ED0067EE1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83E697C1141011ED0067EE1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E697C0141011ED0067EE1E /* git-checker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E697C3141011ED0067EE1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83E697C4141011ED0067EE1E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E697C6141011ED0067EE1E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				832DF36B152A169B00FE176E /* Globals.h */,
+				83E697C7141011ED0067EE1E /* main.m */,
+				83E697CB141011ED0067EE1E /* git_checker.1 */,
+				83E697C9141011ED0067EE1E /* Supporting Files */,
+			);
+			name = Source;
+			path = "git-checker";
+			sourceTree = "<group>";
+		};
+		83E697C9141011ED0067EE1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83E697CA141011ED0067EE1E /* git-checker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83E697BF141011ED0067EE1E /* git-checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-checker" */;
+			buildPhases = (
+				83E697BC141011ED0067EE1E /* Sources */,
+				83E697BD141011ED0067EE1E /* Frameworks */,
+				83E697BE141011ED0067EE1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "git-checker";
+			productName = "git-checker";
+			productReference = 83E697C0141011ED0067EE1E /* git-checker */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E697B7141011EC0067EE1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = N/A;
+			};
+			buildConfigurationList = 83E697BA141011EC0067EE1E /* Build configuration list for PBXProject "git-checker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83E697B5141011EC0067EE1E;
+			productRefGroup = 83E697C1141011ED0067EE1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E697BF141011ED0067EE1E /* git-checker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E697BC141011ED0067EE1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E697C8141011ED0067EE1E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83E697CD141011ED0067EE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83E697CE141011ED0067EE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83E697D0141011ED0067EE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/git-checker-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83E697D1141011ED0067EE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/git-checker-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E697BA141011EC0067EE1E /* Build configuration list for PBXProject "git-checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E697CD141011ED0067EE1E /* Debug */,
+				83E697CE141011ED0067EE1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E697D0141011ED0067EE1E /* Debug */,
+				83E697D1141011ED0067EE1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E697B7141011EC0067EE1E /* Project object */;
+}
