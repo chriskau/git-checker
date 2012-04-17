@@ -16,7 +16,7 @@ int main (int argc, const char * argv[])
 
         // get the HTML from http://git-scm.com
         NSError *error = nil;
-        NSString *htmlString = [NSString stringWithContentsOfURL:NSURL(@"http://git-scm.com")
+        NSString *htmlString = [NSString stringWithContentsOfURL:NSURL(@"http://www.git-scm.com")
                                                         encoding:NSUTF8StringEncoding
                                                            error:&error];
 
