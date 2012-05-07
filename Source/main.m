@@ -6,8 +6,8 @@
 #import "Globals.h"
 #import <Foundation/Foundation.h>
 
-static NSString *kDivStartString = @"<div id=\"ver\">";
-static NSString *kDivEndString = @"</div>";
+static NSString *kSpanStartString = @"<span class='version'>";
+static NSString *kSpanEndString = @"</span>";
 
 
 int main (int argc, const char * argv[])
@@ -16,11 +16,11 @@ int main (int argc, const char * argv[])
 
         // get the HTML from http://git-scm.com
         NSError *error = nil;
-        NSString *htmlString = [NSString stringWithContentsOfURL:NSURL(@"http://www.git-scm.com")
+        NSString *htmlString = [NSString stringWithContentsOfURL:NSURL(@"http://git-scm.com")
                                                         encoding:NSUTF8StringEncoding
                                                            error:&error];
 
-        if (!htmlString) {
+        if (htmlString == nil) {
             NSLog(@"ERROR: %@", [error localizedDescription]);
             return -1;
         }
@@ -28,7 +28,7 @@ int main (int argc, const char * argv[])
 
         // get the current version number
 
-        NSRange startRange = [htmlString rangeOfString:kDivStartString
+        NSRange startRange = [htmlString rangeOfString:kSpanStartString
                                                options:NSCaseInsensitiveSearch];
 
         if (startRange.location == NSNotFound) {
@@ -36,20 +36,20 @@ int main (int argc, const char * argv[])
             return -1;
         }
 
-        NSRange range = NSMakeRange(NSMaxRange(startRange), 14);
-        NSRange endRange = [htmlString rangeOfString:kDivEndString
+        NSRange range = NSMakeRange(NSMaxRange(startRange), 16);
+        NSRange endRange = [htmlString rangeOfString:kSpanEndString
                                              options:NSCaseInsensitiveSearch
                                              range:range];
 
         if (endRange.location == NSNotFound) {
-            NSLog(@"ERROR: Could not find the closing '</div>'.");
+            NSLog(@"ERROR: Could not find the closing '</span>'.");
             return -1;
         }
 
 
-        // extract the version number (minus the leading 'v')
+        // extract the version number
 
-        NSUInteger location = NSMaxRange(startRange) + 1;
+        NSUInteger location = NSMaxRange(startRange);
         NSUInteger length = endRange.location - location;
 
         NSString *currentVersion = [htmlString substringWithRange:NSMakeRange(location, length)];
