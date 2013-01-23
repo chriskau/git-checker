@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83E697BF141011ED0067EE1E"
-               BuildableName = "git-checker"
-               BlueprintName = "git-checker"
+               BuildableName = "git-version-check"
+               BlueprintName = "git-version-check"
                ReferencedContainer = "container:git-checker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,26 +32,27 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83E697BF141011ED0067EE1E"
-            BuildableName = "git-checker"
-            BlueprintName = "git-checker"
+            BuildableName = "git-version-check"
+            BlueprintName = "git-version-check"
             ReferencedContainer = "container:git-checker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
+      ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83E697BF141011ED0067EE1E"
-            BuildableName = "git-checker"
-            BlueprintName = "git-checker"
+            BuildableName = "git-version-check"
+            BlueprintName = "git-version-check"
             ReferencedContainer = "container:git-checker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -68,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83E697BF141011ED0067EE1E"
-            BuildableName = "git-checker"
-            BlueprintName = "git-checker"
+            BuildableName = "git-version-check"
+            BlueprintName = "git-version-check"
             ReferencedContainer = "container:git-checker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

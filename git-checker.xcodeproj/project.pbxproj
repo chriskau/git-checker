@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83E697BF141011ED0067EE1E /* git-checker */ = {
+		83E697BF141011ED0067EE1E /* git-version-check */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-checker" */;
+			buildConfigurationList = 83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-version-check" */;
 			buildPhases = (
 				83E697BC141011ED0067EE1E /* Sources */,
 				83E697BD141011ED0067EE1E /* Frameworks */,
@@ -106,7 +106,7 @@
 			);
 			dependencies = (
 			);
-			name = "git-checker";
+			name = "git-version-check";
 			productName = "git-checker";
 			productReference = 83E697C0141011ED0067EE1E /* git-checker */;
 			productType = "com.apple.product-type.tool";
@@ -132,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83E697BF141011ED0067EE1E /* git-checker */,
+				83E697BF141011ED0067EE1E /* git-version-check */,
 			);
 		};
 /* End PBXProject section */
@@ -224,7 +224,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-checker" */ = {
+		83E697CF141011ED0067EE1E /* Build configuration list for PBXNativeTarget "git-version-check" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83E697D0141011ED0067EE1E /* Debug */,

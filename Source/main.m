@@ -9,7 +9,6 @@
 static NSString *kSpanStartString = @"<span class='version'>";
 static NSString *kSpanEndString = @"</span>";
 
-
 int main (int argc, const char * argv[])
 {
     @autoreleasepool {
@@ -79,7 +78,16 @@ int main (int argc, const char * argv[])
         // compare version numbers
 
         if (![localVersion isEqualToString:currentVersion]) {
-            printf("A newer version of git (%s) is available.\n", [currentVersion UTF8String]);
+            printf("A newer version of git (%s) is available.\n\n", [currentVersion UTF8String]);
+
+            NSURL *releaseNotesURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://raw.github.com/git/git/master/Documentation/RelNotes/%@.txt", currentVersion]];
+            NSError *error = nil;
+            NSString *releaseNotes = [NSString stringWithContentsOfURL:releaseNotesURL
+                                                            encoding:NSUTF8StringEncoding
+                                                               error:&error];
+            if (releaseNotes) {
+                printf("%s\n", releaseNotes.UTF8String);
+            }
         }
         else {
             printf("The most recent version of git (%s) is installed locally.\n", [currentVersion UTF8String]);
